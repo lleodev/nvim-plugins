@@ -15,6 +15,7 @@ return {
     vim.g.airline_extensions = { "branch", "hunks", "tabline" }
 
     -- 🌿 BRANCH (git)
+    vim.g.airline_branch_prefix = " "
     vim.g['airline#extensions#branch#enabled'] = 1
     vim.g['airline#extensions#branch#use_vcscommand'] = 1
 
