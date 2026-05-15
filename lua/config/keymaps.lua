@@ -42,6 +42,7 @@ vim.keymap.set("n", "<C-s>", ":w<CR>")
 
 -- sair
 vim.keymap.set("n", "<leader>q", ":q<CR>")
+vim.keymap.set("n", "<C-q>", ":qa<CR>", { silent = true })
 
 -- =========================
 -- COPY / PASTE / CUT
@@ -80,4 +81,11 @@ vim.keymap.set("n", "<leader>x", ":bd<CR>")
 -- =========================
 
 -- limpar highlight
-vim.keymap.set("n", "<leader>h", ":nohlsearch<CR>")
+vim.keymap.set("n", "<leader>nh", ":nohlsearch<CR>")
+
+-- =========================
+-- 42HEADER
+-- =========================
+vim.keymap.set("n", "<C-h>", ":Stdheader<CR>", { silent = true })
+
+

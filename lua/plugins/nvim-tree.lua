@@ -12,6 +12,9 @@ return {
     local function on_attach(bufnr)
       local api = require("nvim-tree.api")
 
+      -- 🔥 IMPORTANTE: restaurar atalhos padrão
+      api.config.mappings.default_on_attach(bufnr)
+
       local function opts(desc)
         return {
           desc = "nvim-tree: " .. desc,
